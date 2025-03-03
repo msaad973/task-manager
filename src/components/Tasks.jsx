@@ -96,7 +96,7 @@ export default function Tasks() {
                         {status === 'loading' ? (
                             <p>Loading tasks...</p>
                         ) : tasks.length > 0 ? (
-                            tasks.map((task) => <TaskCard key={task.id} task={task} />)
+                            tasks.slice().reverse().map((task) => <TaskCard key={task.id} task={task} />)
                         ) : (
                             <p>No tasks available</p>
                         )}

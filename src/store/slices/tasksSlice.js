@@ -32,7 +32,7 @@ const tasksSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchTasks.pending, (state) => {
-                state.status = 'loading';
+                state. status = 'loading';
             })
             .addCase(fetchTasks.fulfilled, (state, action) => {
                 state.status = 'succeeded';
